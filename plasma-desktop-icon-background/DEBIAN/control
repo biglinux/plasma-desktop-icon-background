@@ -1,0 +1,10 @@
+Package: plasma-desktop-icon-background
+Version: 1.0.0-1big1
+Depends: plasma-desktop-data
+Architecture: all
+Maintainer: Bruno Goncalves <www.biglinux.com.br>
+Section: admin
+Priority: optional
+Installed-Size:36
+Description: Back /usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/FolderItemDelegate.qml from plasma 5.5 to use icons with text background
+

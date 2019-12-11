@@ -1,0 +1,16 @@
+#!/bin/sh
+set -e
+package_name=plasma-desktop-icon-background
+mkdir -p "/usr/share/dpkgdivert/plasma-desktop-icon-background"
+case "$1" in
+  install)
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/plasma-desktop-icon-background/usrshareplasmaplasmoidsorg.kde.desktopcontainmentcontentsuiFolderItemDelegate.qml" --rename "/usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/FolderItemDelegate.qml"
+    ;;
+  upgrade)
+if [ "$(dpkg-divert --list "/usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/FolderItemDelegate.qml")" = "" ]
+then
+    dpkg-divert --package "$package_name" --divert "/usr/share/dpkgdivert/plasma-desktop-icon-background/usrshareplasmaplasmoidsorg.kde.desktopcontainmentcontentsuiFolderItemDelegate.qml" --rename "/usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/FolderItemDelegate.qml"
+fi
+;;
+esac
+exit 0
