@@ -1,6 +1,6 @@
-cbd0835c949fd18c80e0d39a2108801f  usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/FolderItemDelegate.qml
-7bde8842c83c014a506f2038c77abcca  DEBIAN/control
+6348a138f8cfa37e8c3f8dee21c5bb37  usr/share/plasma/plasmoids/org.kde.desktopcontainment/contents/ui/FolderItemDelegate.qml
 814fb615856dc39ce61541e3f21b65d7  DEBIAN/dpkg-divert
 625487bc533cc8492323738127bfb727  DEBIAN/preinst
 7fdb7194a5e559a5d12b4b8ec1ec7758  DEBIAN/postrm
 d41d8cd98f00b204e9800998ecf8427e  DEBIAN/md5sums
+b96047ef1c157a162d03469159f3b2d0  DEBIAN/control
