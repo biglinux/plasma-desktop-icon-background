@@ -294,27 +294,17 @@ Item {
                     overlays: model.overlays
                 }
                 
-                
+
                     Rectangle {
-                        readonly property bool softwareRendering: GraphicsInfo.api === GraphicsInfo.Software
-                        id: textBackground
-                        visible: softwareRendering
-
-
+                        visible: GraphicsInfo.api === GraphicsInfo.Software
                         anchors {
-                            left: label.left
-                            leftMargin: -units.smallSpacing
-                            top: label.top
-                            topMargin: -units.smallSpacing
-                            right: label.right
-                            rightMargin: -units.smallSpacing
-                            bottom: label.bottom
-                            bottomMargin: -units.smallSpacing
+                            fill: label
+                            margins: -units.smallSpacing
                         }
 
-                        color: (root.isContainment && main.GridView.view.isRootView) ? PlasmaCore.ColorScope.backgroundColor : "transparent"
+                        color: "#000000"
                         radius: units.smallSpacing
-                        opacity: 0.4
+                        opacity: 0.35
                     }
 
 
